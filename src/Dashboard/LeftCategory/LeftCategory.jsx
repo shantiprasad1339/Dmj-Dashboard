@@ -80,6 +80,13 @@ function LeftCategory() {
                     </li>
 
                     <li className="nav-item">
+                        <Link className="nav-link collapsed" to="/userlist">
+                            <i className="bi bi-card-list"></i>
+                            <span>My User List</span>
+                        </Link>
+                    </li>
+
+                    <li className="nav-item">
                         <Link className="nav-link collapsed" to="/orderlist">
                             <i className="bi bi-card-list"></i>
                             <span>My Order List</span>

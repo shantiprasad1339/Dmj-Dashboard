@@ -35,6 +35,7 @@ import EditVariantImages from '../Update/EditVariantImages';
 import AddBlog from '../ProductInfo/AddBlog';
 import OrderList from '../OrderList/OrderList';
 import CreateOrder from '../OrderShipping/CreateOrder';
+import UserList from '../UserList/UserList';
 
 function Router() {
     return (
@@ -76,6 +77,7 @@ function Router() {
             {/* <Route path='/faq' element={<FAQ/>}></Route> */}
             <Route path='/addmaterial' element={<AddMaterial />}></Route>
             <Route path='/orderlist' element={<OrderList/>}></Route>
+            <Route path='/userlist' element={<UserList/>}></Route>
             <Route path='/create-order/:oId' element={<CreateOrder/>}></Route>
 
         </Routes>
