@@ -79,6 +79,7 @@ const [metal,setMetal] = useState()
       // setDefaultColor(varaintRes.data.data.color)
       setColor(varaintRes.data.data.color)
     //   setMaterailValue(varaintRes.data.data.material);
+    setPrice(varaintRes.data.data.price)
       setVariantDetails(varaintRes.data.data);
       setMainCategory(res.data.data);
       // console.log(variantDetails)
@@ -236,7 +237,7 @@ const [metal,setMetal] = useState()
             <div className="container">
               <form onSubmit={handleVariant}>
                 <div className="row">
-                  <div className="col-md-6 mt-4">
+                  {/* <div className="col-md-6 mt-4">
                     <label className="pro-fnt-num fw-bold">Category :</label>
                     <select
                       className="form-select in-form-box"
@@ -256,8 +257,8 @@ const [metal,setMetal] = useState()
                         );
                       })}
                     </select>
-                  </div>
-                  <div className="col-md-6 mt-4">
+                  </div> */}
+                  {/* <div className="col-md-6 mt-4">
                     <label className="pro-fnt-num fw-bold ">SKU Number :</label>
                     <br />
                     <div className="">
@@ -268,13 +269,13 @@ const [metal,setMetal] = useState()
                         required
                         onChange={(e) => {
                           setSkuNo(e.target.value);
-                          // handleColor(e.target.value)
+                        
                         }}
                         disabled
                       />
-                      {/* {isSku && <span style={{ color: 'red', marginLeft: '8px' }} >Please Enter a Correct SKU Number</span>} */}
+                    
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Price Details */}
                   <h4 className="text-center text-primary mt-5 mb-3">
@@ -325,10 +326,10 @@ const [metal,setMetal] = useState()
                       <input
                         className="form-control in-form-box"
                         type="number"
-                        value={variantDetails.price}
+                        value={price}
                         required
                         onChange={(e) => {
-                          if (e.target.value === "") setDisPrice("");
+                         
                           setPrice(e.target.value);
                         }}
                       />
